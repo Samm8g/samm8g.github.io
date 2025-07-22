@@ -304,28 +304,18 @@
             }
         }
 
-        // Check for saved preference
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme) {
-            applyTheme(savedTheme === 'dark');
-        } else {
-            // Check system preference
-            const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
-            applyTheme(prefersDarkMode.matches);
+        // Check system preference
+        const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
+        applyTheme(prefersDarkMode.matches);
 
-            // Listen for changes in system preference
-            prefersDarkMode.addEventListener('change', (e) => {
-                // Only auto-switch if no manual preference is set
-                if (!localStorage.getItem('theme')) {
-                    applyTheme(e.matches);
-                }
-            });
-        }
+        // Listen for changes in system preference
+        prefersDarkMode.addEventListener('change', (e) => {
+            applyTheme(e.matches);
+        });
 
         darkModeToggle.addEventListener('click', () => {
             const isCurrentlyDarkMode = body.classList.contains('dark-mode');
             applyTheme(!isCurrentlyDarkMode); // Toggle the theme
-            localStorage.setItem('theme', !isCurrentlyDarkMode ? 'dark' : 'light'); // Save the new preference
         });
 
         const socialsToggle = document.getElementById('socialsToggle');
