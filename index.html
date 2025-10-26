@@ -7,19 +7,18 @@
     <meta name="description" content="Samm's personal link tree. Find all my social media and contact links in one place.">
     <meta name="author" content="Samm">
 
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    
+    <!-- RealFaviconGenerator favicon / manifest (added once) -->
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest">
-    
+
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="apple-mobile-web-app-title" content="Samm's Tree">
     <meta name="application-name" content="Samm's Tree">
     <meta name="msapplication-TileColor" content="#2b5797">
-    <meta name="theme-color" content="8a786c">
+    <meta name="theme-color" content="#8a786c">
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://samm8g.github.io/">
@@ -27,13 +26,13 @@
     <meta property="og:description" content="Find all my social media and contact links in one place.">
     <meta property="og:image" content="https://avatars.githubusercontent.com/u/105073478">
 
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://samm8g.github.io/">
-    <meta property="twitter:title" content="Samm's Link Tree">
-    <meta property="twitter:description" content="Find all my social media and contact links in one place.">
-    <meta property="twitter:image" content="https://avatars.githubusercontent.com/u/105073478">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://samm8g.github.io/">
+    <meta name="twitter:title" content="Samm's Link Tree">
+    <meta name="twitter:description" content="Find all my social media and contact links in one place.">
+    <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/105073478">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -46,23 +45,15 @@
         <p>Hello, I'm Samm. A guy who's learning programming skills. Please support me from my links. Contact via <u>Matrix</u> chat only; other social media accounts are private and not monitored for direct messages.</p>
         <a href="https://github.com/samm8g" target="_blank" rel="noopener noreferrer" class="link-button github"><i class="fa-brands fa-github" aria-hidden="true"></i>GitHub</a>
         <a href="https://gitlab.com/samm8g" target="_blank" rel="noopener noreferrer" class="link-button gitlab"><i class="fa-brands fa-gitlab" aria-hidden="true"></i>GitLab</a>
-        <a href="https://matrix.to/#/@samm8g:matrix.org" target="_blank" rel="noopener noreferrer" class="link-button matrix"><i class="fa-solid fa-link" aria-hidden="true"></i>Matrix</a>
-	<div class="collapsible-header" aria-controls="socialsContent" aria-expanded="false">
-            <p>Other Socials </p>
-            <button id="socialsToggle" class="toggle-button" aria-label="Toggle other socials section"><i class="fas fa-chevron-down" aria-hidden="true"></i></button>
-        </div>
-        <div id="socialsContent" class="collapsible-content hidden">
-            <hr>
-            <a href="https://bsky.app/profile/samm8g.bsky.social" target="_blank" rel="noopener noreferrer" class="link-button bluesky"><i class="fa-solid fa-cloud" aria-hidden="true"></i>Bluesky</a>
-            <a href="https://discord.com/users/968889326878486628" target="_blank" rel="noopener noreferrer" class="link-button discord"><i class="fa-brands fa-discord" aria-hidden="true"></i>Discord</a>
-            <a href="https://instagram.com/samm8g" target="_blank" rel="noopener noreferrer" class="link-button instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i>Instagram</a>
-            <a href="https://www.reddit.com/user/samm8g" target="_blank" rel="noopener noreferrer" class="link-button reddit"><i class="fa-brands fa-reddit-alien" aria-hidden="true"></i>Reddit</a>
-            <a href="https://open.spotify.com/user/crfu3yzzhtws8u6pc60kpt1q7" target="_blank" rel="noopener noreferrer" class="link-button spotify"><i class="fa-brands fa-spotify" aria-hidden="true"></i>Spotify</a>
-            <a href="https://tiktok.com/@samm8gg" target="_blank" rel="noopener noreferrer" class="link-button tiktok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i>TikTok</a>
-            <a href="https://www.twitch.tv/samm8g" target="_blank" rel="noopener noreferrer" class="link-button twitch"><i class="fa-brands fa-twitch" aria-hidden="true"></i>Twitch</a>
-            <a href="https://twitter.com/samm8g" target="_blank" rel="noopener noreferrer" class="link-button twitter"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i>Twitter</a>
-            <a href="https://youtube.com/@Samm8g" target="_blank" rel="noopener noreferrer" class="link-button youtube"><i class="fa-brands fa-youtube" aria-hidden="true"></i>YouTube</a>
-        </div>
+        <a href="https://matrix.to/#@samm8g:matrix.org" target="_blank" rel="noopener noreferrer" class="link-button matrix"><i class="fa-solid fa-link" aria-hidden="true"></i>Matrix</a>
+    <div class="collapsible-header" aria-controls="socialsContent" aria-expanded="false">
+        <p>Other Socials </p>
+        <button id="socialsToggle" class="toggle-button" aria-label="Toggle other socials section"><i class="fas fa-chevron-down" aria-hidden="true"></i></button>
+    </div>
+    <div id="socialsContent" class="collapsible-content hidden">
+        <hr>
+        <p>Other Socials </p>
+        <button id="socialsToggle" class="toggle-button" aria-label="Toggle other socials section"><i class="fas fa-chevron-down" aria-hidden="true"></i></button>
     </div>
     <script src="script.js"></script>
 </body>
